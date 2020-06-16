@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <TheHeader />
-    <router-view />
+    <main>
+      <router-view />
+    </main>
     <TheFooter />
   </div>
 </template>
@@ -22,4 +24,14 @@ export default {
 @import "scss/normalize.scss";
 @import "scss/reset.scss";
 @import "scss/settings.scss";
+
+#app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  main {
+    flex: 1;
+  }
+}
 </style>
