@@ -1,17 +1,17 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   @include font;
   background: url("./assets/pattern.svg") repeat top;
 }
 
-a{
+a {
   color: $primary_color;
 }
 
-img{
+img {
   max-width: 100%;
   display: block;
 }
